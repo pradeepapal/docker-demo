@@ -1,28 +1,6 @@
 # python-app-docker-demo
-This demo shows two steps:
-+ Install `docker-ce` on Centos 7
 + Build and run a simple docker image with a python+flask+gunicorn web application.
 
-## Install docker-ce on Centos 7
-Refer to https://docs.docker.com/engine/installation/linux/docker-ce/centos/
-You can also find [other OS installation docs from here](https://docs.docker.com/engine/installation).
-
-#### Uninstall old versions
-```
-$ sudo yum remove docker \
-                  docker-common \
-                  docker-selinux \
-                  docker-engine
-```
-
-#### Install using repository
-```
-sudo yum install -y yum-utils device-mapper-persistent-data lvm2
-sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-sudo yum install docker-ce
-sudo systemctl start docker
-sudo docker run hello-world
-```
 
 Other commands: 
 + check docker status 
